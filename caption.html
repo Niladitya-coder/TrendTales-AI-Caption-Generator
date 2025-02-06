@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Generate Captions - TrendTales</title>
+    <link rel="icon" type="image/x-icon" href="social-media.png">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <header class="header">
+        <h1>Generate AI Captions</h1>
+    </header>
+
+    <section class="caption-container">
+        <h2>Upload an Image & Enter Keywords</h2>
+        <p>Our AI will generate the perfect caption for you!</p>
+
+        <!-- Image Upload Section -->
+        <label for="imageUpload" class="upload-label">
+            <input type="file" id="imageUpload" accept="image/*" hidden>
+            <span>📸 Upload Image</span>
+        </label>
+        <img id="previewImage" src="" alt="Image Preview" class="image-preview hidden">
+
+        <!-- Keywords Input -->
+        <input type="text" id="keywordInput" placeholder="Enter keywords (e.g. travel, sunset)" class="input-field">
+
+        <!-- Generate Caption Button -->
+        <!-- From Uiverse.io by Spacious74 --> 
+<button class="button" id="generateBtn">
+    <div class="inner">
+      <div class="svgs">
+        <svg
+          viewBox="0 0 256 256"
+          height="1em"
+          width="1em"
+          xmlns="http://www.w3.org/2000/svg"
+          class="svg-l"
+        >
+          <path
+            d="M240 128a15.79 15.79 0 0 1-10.5 15l-63.44 23.07L143 229.5a16 16 0 0 1-30 0l-23.06-63.44L26.5 143a16 16 0 0 1 0-30l63.44-23.06L113 26.5a16 16 0 0 1 30 0l23.07 63.44L229.5 113a15.79 15.79 0 0 1 10.5 15"
+            fill="currentColor"
+          ></path>
+        </svg>
+        <svg
+          viewBox="0 0 256 256"
+          height="1em"
+          width="1em"
+          xmlns="http://www.w3.org/2000/svg"
+          class="svg-s"
+        >
+          <path
+            d="M240 128a15.79 15.79 0 0 1-10.5 15l-63.44 23.07L143 229.5a16 16 0 0 1-30 0l-23.06-63.44L26.5 143a16 16 0 0 1 0-30l63.44-23.06L113 26.5a16 16 0 0 1 30 0l23.07 63.44L229.5 113a15.79 15.79 0 0 1 10.5 15"
+            fill="currentColor"
+          ></path>
+        </svg>
+      </div>
+      Generate
+    </div>
+  </button>
+  
+
+        <!-- Display Generated Caption -->
+        <div id="captionResult" class="caption-output"></div>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 TrendTales | All Rights Reserved</p>
+    </footer>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
